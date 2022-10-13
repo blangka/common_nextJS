@@ -61,4 +61,6 @@ npm i @emotion/styled @emotion/react
 
 ## 8. babel 설정  
 
-> .babelrc 파일 참고 
+> .babelrc 파일 참고   
+
+## 9. 화면 Test - storybook

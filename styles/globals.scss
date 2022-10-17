@@ -1,0 +1,43 @@
+@mixin font-face($name) {
+  $filepath: 'https://cdn.airlab.xyz/fonts';
+  @font-face {
+    font-family: '#{$name}';
+    font-weight: normal;
+    font-style: normal;
+    src: url('#{$filepath}/#{$name}.eot'); /* IE 6 ~ 8, IE 호환성 보기 */
+    src: url('#{$filepath}/#{$name}.woff2') format('woff2'),
+      /* IE Edge, WOFF2 지원 브라우저 */ url('#{$filepath}/#{$name}.woff')
+    format('woff'),
+      /* IE 9+, 모던 브라우저 */ url('#{$filepath}/#{$name}.ttf')
+    format('truetype');
+  }
+}
+
+/* Hyundai font */
+@include font-face('HyundaiSansHeadKRBold');
+@include font-face('HyundaiSansHeadKRLight');
+@include font-face('HyundaiSansHeadKRMedium');
+@include font-face('HyundaiSansHeadKRRegular');
+@include font-face('HyundaiSansTextKRBold');
+@include font-face('HyundaiSansTextKRMedium');
+@include font-face('HyundaiSansTextKRRegular');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: HyundaiSansTextKRRegular, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow-y: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

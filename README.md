@@ -44,6 +44,7 @@ prettier는 코드의 포맷을 맞춰주고 eslint는 코드의 문법을 검�
 [참고 2](https://kbwplace.tistory.com/151)  
 
 ## 5. Recoil  
+[해당 글](https://parkgang.github.io/next.js/using-recoil-in-next.js/)을 확인하실 수 있습니다.
 
 ### 설치
 ```

@@ -1,4 +1,8 @@
-const StorybookTest = ({ test }) => {
+interface StorybookProps {
+	test: string;
+}
+
+const StorybookTest = ({ test }: StorybookProps) => {
 	return (
 		<div>
 			storybook test

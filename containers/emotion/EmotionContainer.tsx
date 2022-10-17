@@ -1,15 +1,7 @@
-import { css } from "@emotion/react";
+import { mainCss } from "./EmotionContainer.style";
 
 const EmotionContainer = () => {
-	return (
-		<div
-			css={css`
-				background-color: hotpink;
-			`}
-		>
-			test
-		</div>
-	);
+	return <div css={mainCss}>test</div>;
 };
 
 export default EmotionContainer;

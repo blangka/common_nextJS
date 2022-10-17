@@ -1,25 +1,25 @@
 import React, { useEffect } from "react";
-import { useQuery } from "react-query";
-import { getPosts } from "lib/api/api";
+
+import usePostsQuery from "hooks/quires/usePostsQuery";
+import usePostsMutation from "hooks/quires/usePostsMutation";
 
 const ReactQueryPage = () => {
-	const { status, data } = useQuery("getPosts", () => getPosts().then((res) => res.data));
+	// 서버에서 저장되어 있는 Post 정보를 사용하기 위한 Custom Hook
+	const { data } = usePostsQuery();
 
-	useEffect(() => {
-		console.log("data", data);
-	}, []);
-
-	if (status === "loading") {
-		return <div>Loading...</div>;
-	}
-
-	if (status === "error") {
-		return <div>Error</div>;
-	}
+	const { mutate } = usePostsMutation();
 
 	return (
 		<div>
-			{data?.id} {data?.title}
+			<button onClick={() => mutate("1")}>Create Post</button>
+			<div>
+				{data?.map((item) => (
+					<div key={item.id}>
+						<h1>{item.title}</h1>
+						<p>{item.body}</p>
+					</div>
+				))}
+			</div>
 		</div>
 	);
 };

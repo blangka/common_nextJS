@@ -1,7 +1,8 @@
 import React from "react";
+import { NextPage } from "next";
 
-const index = () => {
-	return <div>Hello World</div>;
+const app: NextPage = () => {
+	return <div>test</div>;
 };
 
-export default index;
+export default app;

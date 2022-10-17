@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 import usePostsQuery from "hooks/quires/usePostsQuery";
 import usePostsMutation from "hooks/quires/usePostsMutation";

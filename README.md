@@ -27,23 +27,23 @@ npm run lint
 npm i next react react-dom
 ```
 
-### typescript 설정  
+### typescript 설정
 ```
 npm i -D typescript @types/react @types/node
 ```
 
-## 4. Code convention  
+## 4. Code convention
 협업 시에 규칙에 대해서 prettier 와 eslint로 관리 한다.  
-prettier는 코드의 포맷을 맞춰주고 eslint는 코드의 문법을 검사한다.  
+prettier는 코드의 포맷을 맞춰주고 eslint는 코드의 문법을 검사한다.
 
-설정파일  
+설정파일
 > .eslintrc.js 파일 참고  
-> .prettierrc 파일 참고  
+> .prettierrc 파일 참고
 
 [참고 1](https://velog.io/@mayinjanuary/Next.js-%EC%84%B8%ED%8C%85%ED%95%98%EA%B8%B0-ESLint-Prettier-%EC%84%A4%EC%A0%95)  
-[참고 2](https://kbwplace.tistory.com/151)  
+[참고 2](https://kbwplace.tistory.com/151)
 
-## 5. Recoil  
+## 5. Recoil
 [해당 글](https://parkgang.github.io/next.js/using-recoil-in-next.js/)을 확인하실 수 있습니다.
 
 ### 설치
@@ -60,8 +60,8 @@ npm i recoil
 npm i @emotion/styled @emotion/react
 ```
 
-## 8. babel 설정  
+## 8. babel 설정
 
-> .babelrc 파일 참고   
+> .babelrc 파일 참고
 
 ## 9. 화면 Test - storybook

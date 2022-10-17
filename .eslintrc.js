@@ -17,6 +17,7 @@ module.exports = {
 	rules: {
 		quotes: ["error", "double"], //더블 쿼터 사용
 		"@typescript-eslint/consistent-type-assertions": "off", //타입 단언 사용
+		"@typescript-eslint/promise-function-async": "warn", //비동기 함수에 async 사용
 		"@typescript-eslint/strict-boolean-expressions": 0, //boolean 타입에 대한 불필요한 검사를 하지 않음
 		"@typescript-eslint/explicit-function-return-type": "off", //함수의 반환 타입을 명시하지 않음
 		"@typescript-eslint/quotes": ["error", "double"], //더블 쿼터 사용

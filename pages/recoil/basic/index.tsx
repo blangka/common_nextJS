@@ -3,17 +3,17 @@ import { pageState } from "states";
 import { convertPageNameToComponentName } from "utils/commonUtil";
 import Link from "next/link";
 
-const SamplePage = () => {
+const BasicPage = () => {
 	const [page, setPage] = useRecoilState(pageState);
 
 	function handleOnClick() {
-		setPage(convertPageNameToComponentName("SamplePage"));
+		setPage(convertPageNameToComponentName("BasicPage"));
 	}
 
 	return (
 		<div>
 			<div>
-				<h1>SamplePage</h1>
+				<h1>BasicPage</h1>
 			</div>
 			<div>
 				<h1>{page.pageName}</h1>
@@ -22,8 +22,8 @@ const SamplePage = () => {
 				<button onClick={handleOnClick}>Change Page Name</button>
 			</div>
 			<div>
-				<Link href="/recoil/basic">
-					<button>basic Page 이동</button>
+				<Link href="/recoil/sample">
+					<button>sample Page 이동</button>
 				</Link>
 			</div>
 			<hr />
@@ -31,4 +31,4 @@ const SamplePage = () => {
 	);
 };
 
-export default SamplePage;
+export default BasicPage;
